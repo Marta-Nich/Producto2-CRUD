@@ -16,23 +16,23 @@ public class Seeds {
     }
 
     public void generateSeeds(){
-        Menu menuLibanes = new Menu("Libanes", 30.5);
-        Menu menuVeggie = new Menu("Veggie", 20);
-        Menu menuBurguer = new Menu("Libanes", 25);
-        menuRepository.save(menuLibanes);
-        menuRepository.save(menuVeggie);
-        menuRepository.save(menuBurguer);
+        Menu menuMixto = new Menu("Mixto", 30.5);
+        Menu menuVegano = new Menu("Vegano", 20);
+        Menu menuCarnivoro = new Menu("Carnivoro", 25);
+        menuRepository.save(menuMixto);
+        menuRepository.save(menuVegano);
+        menuRepository.save(menuCarnivoro);
 
-        Product productPollo = new Product("Pollo",5.00);
-        Product productSeitan = new Product("Seitan",7.00);
-        Product productTofu = new Product("Tofu",6.50);
+        Product productPollo = new Product("Pollo",2.00);
+        Product productVacuno = new Product("Vacuno",4.00);
+        Product productGarbanzos = new Product("Garbanzos",3.50);
         Product productTernera = new Product("Ternera",5.50);
-        Product productSetas = new Product("Setas",2.00);
+        Product productGamabas = new Product("Gambas",2.00);
         productRepository.save(productPollo);
-        productRepository.save(productSeitan);
-        productRepository.save(productTofu);
+        productRepository.save(productVacuno);
+        productRepository.save(productGarbanzos);
         productRepository.save(productTernera);
-        productRepository.save(productSetas);
+        productRepository.save(productGamabas);
 
 
 
